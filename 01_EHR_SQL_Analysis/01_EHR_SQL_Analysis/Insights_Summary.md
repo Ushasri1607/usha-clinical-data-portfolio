@@ -19,3 +19,7 @@ This document summarizes insights obtained from SQL analysis of a de-identified 
 - High-frequency diagnoses may require preventive care focus
 - Visit trend patterns can support staffing and resource planning
 - Age-group analysis helps target population health initiatives
+- Total encounters (visits):
+- Visits per month peak:
+- Most common encounter class:
+- Average claim cost:
