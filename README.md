@@ -43,3 +43,7 @@ Conceptual and technical exploration of healthcare interoperability using HL7 FH
 
 ### 📁 06_Internship_TriLab
 Summary of clinical informatics internship experience at TriLab Health, including LIS data c
+
+## 🔹 Contact
+- 📧 Email: ushasrikaruturi@gmail.com
+- 🔗 LinkedIn: www.linkedin.com/in/usha-sri-karuturi-828a5a195
