@@ -116,3 +116,53 @@ SELECT
 FROM encounters
 GROUP BY ENCOUNTERCLASS
 ORDER BY total_claim_cost DESC;
+
+/* =========================
+   CONDITIONS (DIAGNOSES) ANALYSIS
+   Table: conditions (from conditions.csv)
+   Columns: START, STOP, PATIENT, ENCOUNTER, SYSTEM, CODE, DESCRIPTION
+   ========================= */
+
+-- 14) Total condition records
+SELECT COUNT(*) AS total_condition_records
+FROM conditions;
+
+-- 15) Top 10 diagnoses (by frequency)
+SELECT
+  DESCRIPTION,
+  COUNT(*) AS diagnosis_count
+FROM conditions
+GROUP BY DESCRIPTION
+ORDER BY diagnosis_count DESC
+LIMIT 10;
+
+-- 16) Diagnoses per month (trend)
+SELECT
+  substr(START, 1, 7) AS condition_month,
+  COUNT(*) AS condition_count
+FROM conditions
+GROUP BY condition_month
+ORDER BY condition_month;
+
+-- 17) Top 10 diagnoses with average claim cost (join conditions + encounters)
+-- Joins by ENCOUNTER = encounters.Id
+SELECT
+  c.DESCRIPTION,
+  COUNT(*) AS diagnosis_count,
+  ROUND(AVG(e.TOTAL_CLAIM_COST), 2) AS avg_claim_cost
+FROM conditions c
+JOIN encounters e
+  ON c.ENCOUNTER = e.Id
+GROUP BY c.DESCRIPTION
+ORDER BY diagnosis_count DESC
+LIMIT 10;
+
+-- 18) Encounter class breakdown for diagnoses (join conditions + encounters)
+SELECT
+  e.ENCOUNTERCLASS,
+  COUNT(*) AS condition_records
+FROM conditions c
+JOIN encounters e
+  ON c.ENCOUNTER = e.Id
+GROUP BY e.ENCOUNTERCLASS
+ORDER BY condition_records DESC;
