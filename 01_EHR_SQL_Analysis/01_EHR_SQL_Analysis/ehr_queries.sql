@@ -66,3 +66,53 @@ ORDER BY patient_count DESC;
 -- GROUP BY visit_month
 -- ORDER BY visit_month;
 
+/* =========================
+   ENCOUNTERS ANALYSIS
+   Table: encounters (from encounters.csv)
+   Columns: Id, START, STOP, PATIENT, ENCOUNTERCLASS, DESCRIPTION, TOTAL_CLAIM_COST, PAYER_COVERAGE, etc.
+   ========================= */
+
+-- 8) Total encounters (visits)
+SELECT COUNT(*) AS total_encounters
+FROM encounters;
+
+-- 9) Encounters per month (visit trends)
+-- START is an ISO datetime, so we can group by YYYY-MM
+SELECT
+  substr(START, 1, 7) AS visit_month,
+  COUNT(*) AS visit_count
+FROM encounters
+GROUP BY visit_month
+ORDER BY visit_month;
+
+-- 10) Encounters by class (e.g., outpatient, inpatient, emergency)
+SELECT
+  ENCOUNTERCLASS,
+  COUNT(*) AS encounter_count
+FROM encounters
+GROUP BY ENCOUNTERCLASS
+ORDER BY encounter_count DESC;
+
+-- 11) Top 10 encounter descriptions
+SELECT
+  DESCRIPTION,
+  COUNT(*) AS encounter_count
+FROM encounters
+GROUP BY DESCRIPTION
+ORDER BY encounter_count DESC
+LIMIT 10;
+
+-- 12) Average and total claim cost (overall)
+SELECT
+  ROUND(AVG(TOTAL_CLAIM_COST), 2) AS avg_total_claim_cost,
+  ROUND(SUM(TOTAL_CLAIM_COST), 2) AS sum_total_claim_cost
+FROM encounters;
+
+-- 13) Claim cost by encounter class
+SELECT
+  ENCOUNTERCLASS,
+  ROUND(AVG(TOTAL_CLAIM_COST), 2) AS avg_claim_cost,
+  ROUND(SUM(TOTAL_CLAIM_COST), 2) AS total_claim_cost
+FROM encounters
+GROUP BY ENCOUNTERCLASS
+ORDER BY total_claim_cost DESC;
