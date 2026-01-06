@@ -12,6 +12,7 @@ SQL | Excel | GitHub
 3. Age group distribution
 4. Top diagnoses
 5. Visit trends over time
+6. Which diagnoses have the highest average claim cost?
 
 ### Files
 - ehr_queries.sql
