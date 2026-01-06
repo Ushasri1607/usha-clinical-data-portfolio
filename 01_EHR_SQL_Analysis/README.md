@@ -22,3 +22,6 @@ SQL | Excel | GitHub
   
 ### Privacy Note
 Although this dataset is synthetic, the raw files include identifier-like columns (e.g., SSN, DRIVERS). These fields are not used in any analysis and should be removed if sharing outside this repository.
+
+### Sample Dashboard
+![Encounter Class Distribution](images/encounter_class_distribution.png)
