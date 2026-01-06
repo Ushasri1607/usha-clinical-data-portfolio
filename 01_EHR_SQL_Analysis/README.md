@@ -15,5 +15,5 @@ SQL | Excel | GitHub
 
 ### Files
 - ehr_queries.sql
-- insights_summary.md
+- Insights_Summary.md
 - images/
