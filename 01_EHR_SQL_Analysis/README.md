@@ -23,6 +23,7 @@ The dataset is HIPAA-safe and contains no real patient information.
 - ehr_queries.sql – SQL queries used for analysis
 - Insights_Summary.md – Key findings and insights
 - images/ – Charts and tables
+- dataset/
 
 ### Key Learnings
 - Writing SQL queries for healthcare data
