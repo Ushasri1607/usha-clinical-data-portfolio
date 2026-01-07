@@ -9,8 +9,8 @@ This project analyzes de-identified EHR-style healthcare data to identify patien
 - GitHub
 
 ### Dataset
-- Type: Synthetic / de-identified healthcare dataset
-- HIPAA: No PHI included
+This analysis uses a synthetic EHR dataset generated using Synthea.
+The dataset is HIPAA-safe and contains no real patient information.
 
 ### Key Questions Answered
 1. How many patients are in the dataset?
