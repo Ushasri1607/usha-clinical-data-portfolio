@@ -28,3 +28,6 @@ The dataset is HIPAA-safe and contains no real patient information.
 - Writing SQL queries for healthcare data
 - Understanding clinical datasets
 - Ensuring HIPAA-safe data handling
+
+### Privacy Note
+Although this dataset is synthetic, the raw files include identifier-like columns (e.g., SSN, DRIVERS). These fields are not used in any analysis and should be removed if sharing outside this repository.
