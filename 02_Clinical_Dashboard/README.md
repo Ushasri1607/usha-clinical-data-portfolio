@@ -1,11 +1,26 @@
-## Clinical Monitoring Dashboard (Tableau/Power BI)
+# Clinical Monitoring Dashboard
 
-### KPIs
+## Overview
+This project focuses on monitoring key clinical and operational metrics using de-identified EHR data.  
+The dashboard is designed to support healthcare decision-making by tracking patient volume, visit patterns, and encounter types.
+
+## Tools
+- SQL (SQLite)
+- Tableau Public
+- Excel
+- GitHub
+
+## Key Metrics Monitored
 - Total patients
-- Visits per month
-- Top diagnoses
-- Age distribution
-- Gender distribution
+- Total encounters
+- Encounter type distribution
+- Monthly visit trends
+- High-utilization encounter categories
 
-### Screenshots
-Upload dashboard images in this folder.
+## Dataset
+Synthetic EHR data (HIPAA-safe) generated using Synthea.
+
+## Deliverables
+- KPI dashboard
+- Trend visualizations
+- Insight summary
