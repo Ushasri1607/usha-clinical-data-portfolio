@@ -24,3 +24,6 @@ Synthetic EHR data (HIPAA-safe) generated using Synthea.
 - KPI dashboard
 - Trend visualizations
 - Insight summary
+
+## Dashboard Preview
+![Clinical Monitoring Dashboard](images/clinical_monitoring_dashboard.png)
