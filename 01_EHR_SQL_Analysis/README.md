@@ -18,6 +18,7 @@ The dataset is HIPAA-safe and contains no real patient information.
 3. How do patient visits trend over time?
 4. What is the age group distribution?
 5. What is the gender distribution?
+6. Which diagnoses have the highest average claim cost?
 
 ### Files in This Folder
 - ehr_queries.sql – SQL queries used for analysis
