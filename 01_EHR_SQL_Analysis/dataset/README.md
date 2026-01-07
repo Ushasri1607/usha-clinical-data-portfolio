@@ -1,17 +1,11 @@
-## Dataset Information
+## Dataset
 
-This project uses a synthetic EHR dataset generated using Synthea.
-
-### Dataset Type
-- Synthetic (HIPAA-safe)
-- No real patient data
+This project uses a synthetic / de-identified healthcare dataset (HIPAA-safe).
 
 ### Files
-- patients.csv
-- encounters.csv
-- conditions.csv
-- observations.csv
+- patients.csv (or your uploaded CSV)
+- encounters.csv (optional)
+- conditions.csv (optional)
 
-### Purpose
-Used for practicing SQL-based healthcare data analysis and reporting.
-
+### Notes
+No PHI is included. The dataset is used only for SQL practice and analytics demonstrations.
