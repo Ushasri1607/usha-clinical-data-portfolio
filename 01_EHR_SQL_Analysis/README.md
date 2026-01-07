@@ -32,6 +32,9 @@ The dataset is HIPAA-safe and contains no real patient information.
 ### Top Diagnoses
 ![Top Diagnoses](images/top_diagnoses.png)
 
+### Monthly Visit Trends
+![Monthly Visit Trends](images/monthly_visit_trends.png)
+
 ### Key Learnings
 - Writing SQL queries for healthcare data
 - Understanding clinical datasets
