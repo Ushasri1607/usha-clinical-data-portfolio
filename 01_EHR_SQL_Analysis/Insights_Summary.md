@@ -13,6 +13,11 @@ This document summarizes insights obtained from SQL analysis of a de-identified 
 - Visits per month peak:
 - Most common encounter class:
 - Average claim cost:
+- Total condition (diagnosis) records:
+- Top 3 diagnoses:
+- Diagnosis trend (monthly):
+- Diagnosis with highest average claim cost:
+
 
 ### Data Quality Observations
 - Dataset is de-identified / synthetic (HIPAA-safe)
