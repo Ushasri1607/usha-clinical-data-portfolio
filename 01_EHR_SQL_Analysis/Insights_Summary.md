@@ -9,6 +9,10 @@ This document summarizes insights obtained from SQL analysis of a de-identified 
 - Largest age group:
 - Top 5 diagnoses:
 - Monthly visit trend:
+- Total encounters (visits):
+- Visits per month peak:
+- Most common encounter class:
+- Average claim cost:
 
 ### Data Quality Observations
 - Dataset is de-identified / synthetic (HIPAA-safe)
