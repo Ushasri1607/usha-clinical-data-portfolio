@@ -1,26 +1,30 @@
-# EHR SQL Analysis — Synthea Dataset
+## EHR Data Analysis using SQL
 
-## Overview
-This project analyzes synthetic EHR data generated using Synthea.
-The goal is to explore encounter utilization, patient demographics,
-and diagnosis patterns using SQL and Tableau.
+### Project Overview
+This project analyzes de-identified EHR-style healthcare data to identify patient demographics, visit trends, and common clinical conditions. The goal is to demonstrate practical SQL skills and healthcare data understanding for Clinical Data Analyst and Health Informatics roles.
 
-## Dataset
-Synthetic EHR data (no PHI).
-Files used:
-- patients.csv
-- encounters.csv
-- conditions.csv
-
-## Analysis Performed
-- Encounter volume over time
-- Encounter class distribution
-- Top ICD-10 diagnoses
-- Patient age distribution
-- High-utilization patients
-- 30-day return visit proxy
-
-## Tools
-- SQL (MySQL syntax)
-- Tableau
+### Tools Used
+- SQL (SQLite / SQL Server)
+- Excel (data review)
 - GitHub
+
+### Dataset
+- Type: Synthetic / de-identified healthcare dataset
+- HIPAA: No PHI included
+
+### Key Questions Answered
+1. How many patients are in the dataset?
+2. What are the most common diagnoses?
+3. How do patient visits trend over time?
+4. What is the age group distribution?
+5. What is the gender distribution?
+
+### Files in This Folder
+- ehr_queries.sql – SQL queries used for analysis
+- Insights_Summary.md – Key findings and insights
+- images/ – Charts and tables
+
+### Key Learnings
+- Writing SQL queries for healthcare data
+- Understanding clinical datasets
+- Ensuring HIPAA-safe data handling
