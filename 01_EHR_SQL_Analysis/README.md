@@ -29,6 +29,9 @@ The dataset is HIPAA-safe and contains no real patient information.
 ### Sample Dashboard
 ![Encounter Class Distribution](images/encounter_class_distribution.png)
 
+### Top Diagnoses
+![Top Diagnoses](images/top_diagnoses.png)
+
 ### Key Learnings
 - Writing SQL queries for healthcare data
 - Understanding clinical datasets
